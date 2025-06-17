@@ -2,8 +2,10 @@ from langchain_openai import ChatOpenAI
 from langchain.prompts import PromptTemplate
 import os
 from dotenv import load_dotenv
+from langchain.globals import set_debug
 
 load_dotenv()
+set_debug(True)
 
 number_of_days = 7
 number_of_children = 2

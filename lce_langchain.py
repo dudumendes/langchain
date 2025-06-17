@@ -4,6 +4,7 @@ from langchain.globals import set_debug
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 import os
+from langchain.globals import set_debug
 from dotenv import load_dotenv
 
 # set_debug(True)

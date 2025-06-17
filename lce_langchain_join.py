@@ -3,6 +3,7 @@ from langchain.prompts import PromptTemplate, ChatPromptTemplate
 from langchain_core.pydantic_v1 import BaseModel, Field
 from langchain_core.output_parsers import JsonOutputParser, StrOutputParser
 from operator import itemgetter
+from langchain.globals import set_debug
 import os
 from dotenv import load_dotenv
 
