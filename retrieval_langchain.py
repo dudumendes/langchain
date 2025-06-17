@@ -22,7 +22,7 @@ llm = ChatOpenAI(
     openai_api_key=os.getenv("OPENAI_API_KEY")
 )
 
-loaded_text = TextLoader("mc-gold.txt", encoding="utf-8")
+loaded_text = TextLoader("./files/mc-gold.txt", encoding="utf-8")
 documents = loaded_text.load()
 
 splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
